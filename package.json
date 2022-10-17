@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^2.1.3"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,5 +29,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "eslint": "^8.25.0",
+    "eslint-config-react-app": "^7.0.1"
   }
 }

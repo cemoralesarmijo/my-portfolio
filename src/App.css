@@ -18,7 +18,7 @@
 
   /* == front and typography == */
   --body-font: 'Poppins', sans-serif;
-
+  --medium-font-size: 3.0rem;
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -166,15 +166,31 @@ img {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 /* for medium devices */
-@media screen and (max-width: 768px){}
+@media screen and (max-width: 768px){
+  .section {
+    padding: 2rem 2rem 0 2rem;
+  }
+}
 
 @media screen and (max-width: 576px){}
 
 
 /* for small devices */
 @media screen and (max-width: 350px){
+  :root {
+    --big-font-size: 2.25rem;
+  }
+
   .container {
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
