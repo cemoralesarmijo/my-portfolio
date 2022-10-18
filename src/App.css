@@ -177,14 +177,20 @@ img {
 }
 /* for medium devices */
 @media screen and (max-width: 768px){
+
+  .body {
+    margin-bottom: 0 0 var(--header-height) 0 ;
+  }
+
   .section {
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 0  4rem;
+  }
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
   }
 }
 
 @media screen and (max-width: 576px){}
-
-
 /* for small devices */
 @media screen and (max-width: 350px){
   :root {
