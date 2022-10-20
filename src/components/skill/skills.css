@@ -84,7 +84,7 @@ i{
 /* for small devices */
 @media screen and (max-width: 350px){
     .skills__box {
-        column__box: 1.25rem;
+        column-gap: 1.25rem;
     }
 
     .skills__name {
