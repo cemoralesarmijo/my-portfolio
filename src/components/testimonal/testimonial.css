@@ -1,0 +1,116 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 2rem !important;
+}
+:root {
+    --herlper-tint: #f3f4ff;
+    --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%)
+}
+.swiper-slide {
+    text-align: center;
+    /*font-size: 16px;*/
+    font-size: var(--normal-font-size);
+    font-weight: 0;
+    background: none;
+    transform: translate3d(0,0,0);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-client-msg {
+    /*padding: 2rem 7rem;/*
+    /*background: white;*/
+    /*border-radius: 2rem;*/
+    text-align: left;
+    box-shadow:var(--herlper-tint);
+    position: relative;
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    /*font-weight: var(--small-font-size);*/
+}
+
+/*
+.swiper-client-msg p {
+    font-weight: var(--tiny-font-size) !important;
+}*/
+
+.swiper-client-msg::before {
+    content: "";
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5rem solid white;
+    border-color: transparent;
+    border-top-color: var(--herlper-tint);
+}
+
+
+
+/*quote inside testimonal box message*/
+.swiper-client-msg p::before {
+    content: "\201C";
+    position: absolute;
+    top:0;
+    left: 2rem;
+    color: #ced3ff;
+    /*color: #ced3ff;*/
+    font-size: 4rem;
+}
+.swiper-client-msg p::after {
+    content: "\201C";
+    position: absolute;
+    bottom:0;
+    right: 2rem;
+    color: #ced3ff;
+    /*color: #ced3ff;*/
+    font-size: 4rem;
+}
+
+.swiper-client-data {
+    align-items: center;
+    margin-top: 3.2rem;
+    gap: 3.2rem ;
+}
+.slide-img {
+    max-width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    /*border: 0.2rem solid var(--herlper-tint);*/
+    border: 0.2rem solid rgba(0, 0, 0, 0.1);
+
+}
+
+/*.swiper-slide {*/
+/*    max-width: 10rem;*/
+/*    height: 10rem;*/
+/*    border-radius: 50%;*/
+/*    border: 0.5rem solid var(--herlper-tint);*/
+/*}*/
+
+.swiper-client-data {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.client-data-details,
+.swiper-client-msg {
+    color: #8d8d8d;
+}
+.swiper-wrapper {
+    margin-top: 50px;
+    /*transform: translate3d(50px, 0px, 0px) !important;*/
+}

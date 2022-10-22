@@ -6,6 +6,7 @@ import About from "./components/about/About";
 import Skills from "./components/skill/Skills";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
+import Testimonial from "./components/testimonal/Testimonial";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Home />
               <About />
               <Skills />
+              <Testimonial />
           </main>
           <Footer />
           <ScrollUp />
