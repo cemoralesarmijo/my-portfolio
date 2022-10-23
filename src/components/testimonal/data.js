@@ -20,7 +20,7 @@ module.exports = [
   },
   {
     "name": "Samuel Espinoza",
-    "image": process.env.REACT_APP_TESTIMONIAL_DANIEL_LISZKA,
+    "image": process.env.REACT_APP_TESTIMONIAL_SANUEL_ESPINOZA,
     "title": "Backend developer at Jooycar",
     "comment": "Cesar is an excellent professional with great determination to achieve his goals. His persistence and ownership allow him to use every resource he has to perform at his best even in adversity. He's always improving himself and mentoring others so that the whole team can grow to its fullest potential. I'm glad to have had the privileged of working with him. "
   },

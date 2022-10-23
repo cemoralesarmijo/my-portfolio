@@ -23,7 +23,15 @@ const Testimonial = () => {
                 pagination={{
                     clickable: true,
                 }}
+                autoplay={{
+                    delay: 9000,
+                    disableOnInteraction: true,
+                }}
                 breakpoints={{
+                    300: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                    },
                     400: {
                         slidesPerView: 1,
                         spaceBetween: 30,
@@ -61,7 +69,7 @@ const Testimonial = () => {
                                         alt="client review"/>
                                 </figure>
                                 <div className="client-data-details">
-                                    <p>{data.name}</p>
+                                    <p className="coworker-name">{data.name}</p>
                                     <p>{data.title}</p>
                                 </div>
                             </div>

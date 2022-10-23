@@ -56,10 +56,8 @@
     transform: translateX(-50%);
     border: 5rem solid white;
     border-color: transparent;
-    border-top-color: var(--herlper-tint);
+    border-top-color:  var(--herlper-tint);;
 }
-
-
 
 /*quote inside testimonal box message*/
 .swiper-client-msg p::before {
@@ -113,4 +111,74 @@
 .swiper-wrapper {
     margin-top: 50px;
     /*transform: translate3d(50px, 0px, 0px) !important;*/
+}
+
+
+/* for fix*/
+
+.coworker-name {
+    font-size: 17px !important;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 400px){
+    :root {
+        --big-font-size: 2.25rem;
+    }
+
+    .container {
+        margin-left: var(--mb-2);
+        margin-right: var(--mb-2);
+    }
+    .swiper-client-data  {
+        align-items: center;
+        margin-top: 1rem;
+        gap: 0rem;
+    }
+
+    .swiper-client-msg::before {
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2rem solid white;
+        border-color: transparent;
+        border-top-color: var(--herlper-tint);
+    }
+
+    .swiper {
+        padding: 2rem !important;
+        /* transform: translate3d(50px, 0px, 0px) !important; */
+    }
+    .swiper-wrapper {
+        margin-top: 0px;
+        /* transform: translate3d(50px, 0px, 0px) !important; */
+    }
+
+    .swiper-client-msg {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .swiper-client-msg p::before {
+        left: 0.4rem;
+        font-size: 2.5rem;
+    }
+
+    .swiper-client-msg p::after {
+        bottom: -1.5rem;
+        right: 0.4rem;
+        font-size: 2.5rem;
+    }
+
+    .swiper {
+        padding: 1rem 1.5rem 1.5rem 1rem !important;
+    }
+
+    .slide-img {
+        max-width: 8rem;
+        height: 7rem;
+        border-radius: 50%;
+        border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    }
 }

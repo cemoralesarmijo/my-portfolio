@@ -202,3 +202,9 @@ img {
     margin-right: var(--mb-2);
   }
 }
+
+.bx.bx-send {
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
