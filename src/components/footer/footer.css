@@ -61,3 +61,15 @@
         padding-bottom: 4rem;
     }
 }
+
+
+.uil-custom-footer:hover{
+    color: #333333;
+    transition: color 0.3s;
+}
+
+/*#60daaa*/
+
+.footer__link {
+    color: var(--title-color) !important;
+}

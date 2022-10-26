@@ -15,7 +15,10 @@ const testimonialData = require('./data')
 const Testimonial = () => {
     return (
         <section className="section" id="testimonial">
-            <h2 className="section__title">Testimonials</h2>
+            <div className="custom-section-title">
+                <i className='bx bxs-quote-alt-left text'></i>
+                <span className="text">Testimonials</span>
+            </div>
             <Swiper
                 slidesPerView={2}
                 spaceBetween={30}

@@ -102,3 +102,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+.bxs-file {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}

@@ -6,7 +6,7 @@ function Mailto({ email, subject, body, ...props }) {
     return (
         <a
             href={`mailto:${mail}?subject=${subject || ""}&body=${body || ""}`}
-            className="button button--flex">
+            className="button button--flex draw">
             {props.children}
             <i className='bx bx-send'></i>
         </a>
@@ -16,7 +16,7 @@ function Mailto({ email, subject, body, ...props }) {
 const Data = () => {
     return (
         <div className="home__data">
-            <h1 className="home__title">César Morales</h1>
+            <h1 className="home__title">César Morales Armijo</h1>
             <h3 className="home__subtitle"> Software developer</h3>
             <p className="home__description">
                 {home_description}

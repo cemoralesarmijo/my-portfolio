@@ -1,17 +1,21 @@
 import React from 'react';
-import Backend from './Backend'
-import Frontend from './Frontend'
 import "./skills.css"
 
 const Skills = () => {
     return (
         <section className="skills section" id="skills">
-            <h2 className="section__title">Skills</h2>
-            <span className="section__subtitle">My stack tech level</span>
-            <div className="skills__container container grid">
-                <Frontend />
-                <Backend />
+            <div className="custom-section-title">
+                <i className="fa-regular fa-laptop-code text"></i>
+                <span className="text">Skills & tools</span>
+            </div>
 
+            <div className="card-skill-container">
+                {/*<div className="card card-level-info" >*/}
+                {/*    <span className="stack"><i className='bx bxs-info-circle'></i></span>*/}
+                {/*    <span className="stack"></span>*/}
+                {/*    <span className="stack"></span>*/}
+                {/*    <span className="stack"></span>*/}
+                {/*</div>*/}
             </div>
         </section>
     );
