@@ -15,13 +15,13 @@ const Footer = () => {
                 </ul>
                  <div className="footer__social">
                      <a href="https://linkedin.com/" className="footer__social-link" target="_blank">
-                         <i className="uil uil-linkedin"></i>
+                         <i className="uil uil-linkedin uil-custom-footer"></i>
                      </a>
                      <a href="https://github.com/" className="footer__social-link" target="_blank">
-                         <i className="uil uil-github"></i>
+                         <i className="uil uil-github uil-custom-footer"></i>
                      </a>
                      <a href="https://www.instagram.com/" className="footer__social-link" target="_blank">
-                         <i className="uil uil-instagram-alt"></i>
+                         <i className="uil uil-instagram-alt uil-custom-footer"></i>
                      </a>
                  </div>
                 {/*<span className="footer__copy">*/}

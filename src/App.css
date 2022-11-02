@@ -202,3 +202,27 @@ img {
     margin-right: var(--mb-2);
   }
 }
+
+
+.custom-section-title {
+  /*border: 1px solid #666;*/
+  /*display: inline-block;*/
+  height: 50px;
+  /*margin: 30px;*/
+  /*padding: 2px;*/
+  text-align: center;
+  margin-bottom: 20px;
+}
+.text,
+.icon {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  vertical-align: middle;
+  font-weight: var(--font-semi-bold);
+  padding: 0.2rem
+}
+
+.icon {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
