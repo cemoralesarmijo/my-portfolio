@@ -5,6 +5,13 @@
 p {
     color: #8d8d8d;
 }
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .about__img {
     width: 380px;
     border-radius: 1.5rem;

@@ -73,3 +73,15 @@
 .footer__link {
     color: var(--title-color) !important;
 }
+
+.footer__how_was_build {
+    color: var(--title-color) !important;
+    font-size: 1rem;
+}
+.footer__how_was_build:hover {
+    background: #8d8d8d;
+    transition: background 1s;
+    color: white !important;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}

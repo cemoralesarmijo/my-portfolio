@@ -2,9 +2,10 @@ import React from 'react';
 import "./about.css"
 
 const About = () => {
-    const linkToCv = process.env.REAC__APP__ABOUT__CV_LINK
+    const linkToCv = process.env.REACT_APP_ABOUT_CV_LINK
     const linkAboutPhoto = process.env.REACT_APP_ABOUT_PROFILE_IMAGE
     const aboutData = JSON.parse(process.env.REACT_APP_ABOUT_DESCRIPTION_TEXT)
+    console.log(process.env.REACT__APP__ABOUT__CV_LINK)
     return (
         <section className="about section" id="about">
             <div className="custom-section-title">
@@ -32,7 +33,7 @@ const About = () => {
                         <h3 className="about__title">Experience in</h3>
                         <span className="about__subtitle">Backend / frontend</span>
                     </div>
-                    <div className="button-download-cv"><a  download="cesar_morales_armijo_cv" href={`${linkToCv}`} className="button">
+                    <div className="button-download-cv"><a  download="cesar_morales_armijo_cv" href={`${linkToCv}`} className="button btn-icon">
                         Download CV
                         <i className='bx bxs-file'></i>
                     </a></div>
