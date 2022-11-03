@@ -18,7 +18,7 @@
 }
 
 .home__social-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--title-color);
     text-align: center;
 }
@@ -222,7 +222,9 @@
 }
 /* for small devices */
 @media screen and (max-width: 400px){
-
+    .home__social-icon {
+        font-size: 1.6rem;
+    }
     .home__img {
         width: 180px !important;
         height: 180px !important;
@@ -249,8 +251,7 @@
 
 .uil-social:hover{
     color: #333333;
-    font-size: 3rem;
-    transition: font-size 0.5s;
+    transition: color 0.3s;
 }
 
 
