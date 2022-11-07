@@ -7,15 +7,29 @@ const About = () => {
     const aboutData = JSON.parse(process.env.REACT_APP_ABOUT_DESCRIPTION_TEXT)
     console.log(process.env.REACT__APP__ABOUT__CV_LINK)
     return (
-        <section className="about section" id="about">
+        <section className="about-section section" id="about">
+            <br/>
             <div className="custom-section-title">
                 <i className="fa-regular fa-laptop-code text"></i>
                 <span className="text">About me</span>
             </div>
-
             <div className="container-about grid">
-                <div className="about-photo">
-                    <img src={linkAboutPhoto}  className="about__img" alt=""/>
+                {/*<div className="about-photo">*/}
+                {/*    <img src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_1}  className="bottom about__img" alt=""/>*/}
+                {/*    <img src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_2}  className="top about__img" alt=""/>*/}
+                {/*    <img src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_3}  className="top about__img" alt=""/>*/}
+                {/*</div>*/}
+
+                <div className='about-photo-container'>
+
+                        <img className='pic' src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_1} alt="" id='pic3' />
+
+
+                        <img className='pic' src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_2} alt="" id='pic2' />
+
+
+                        <img className='pic' src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_3} alt="" id='pic1' />
+
                 </div>
                 <div className="about-container-box-resume">
                     <div className="about-box-resume">
@@ -42,7 +56,7 @@ const About = () => {
                     <p className="about__description">
                         {
                             aboutData.map( data  => {
-                                return <p className="about__description">{data}</p>
+                                return <p>{data}</p>
                             })
 
                         }

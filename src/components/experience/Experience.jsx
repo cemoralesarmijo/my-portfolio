@@ -4,6 +4,7 @@ import './experience.css'
 function Experience() {
     return (
         <section className="section" id="experience">
+            <br/>
             <div className="experience-content">
                 <h2 className="experience-title">Experience</h2>
                 <div className="current">
