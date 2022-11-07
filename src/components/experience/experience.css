@@ -1,0 +1,134 @@
+.experience-content{
+    color: var(--text-color );
+    background-color: var(--body-color);
+}
+
+.experience {
+    /*padding-left: 80px;*/
+    max-width: 100%;
+    margin: 2rem auto;
+    /*card style*/
+    border-radius: 10px;
+    background-position: center center;
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* color: #8d8d8d;
+    min-height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;*/
+}
+
+.experience-grid{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.experience-title {
+    color: var(--title-color);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem;
+    font-size: var(--h1-font-size);
+
+}
+.experience-date{
+    font-weight: bold;
+    font-size: var(--h2-font-size);
+    padding: 2rem 2rem 0 2rem;
+}
+.experience-company{
+    font-size: var(--h3-font-size);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 2rem 0 2rem;
+}
+.experience-position{
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    margin-top: 0.5rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.experience-description{
+    font-size: var(--normal-font-size);
+    margin-top: 0.1rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+/*mobile styles*/
+@media only screen and (min-width: 950px) {
+
+    .experience-title {
+        color: var(--title-color);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        margin: 2rem;
+        font-size: var(--h1-font-size);
+    }
+    .experience-date{
+        font-weight: bold;
+        font-size: var(--h2-font-size);
+        padding: 2rem 2rem 0 2rem;
+    }
+    .experience-company{
+        font-size: var(--h3-font-size);
+        /*font-weight: bold;*/
+        text-transform: uppercase;;
+        padding: 0 2rem 0 2rem;
+    }
+    .experience-position{
+        font-size: var(--h4-font-size);
+        font-weight: bold;
+        margin-top: 0.5rem;
+        padding: 0 2rem 0 2rem;
+    }
+    .experience-description{
+        font-size: var(--normal-font-size);
+        margin-top: 0.1rem;
+        padding: 0 2rem 2rem 2rem;
+    }
+    .experience-grid {
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        gap: 0 70px;
+        padding: 70px;
+        justify-content: center;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    .line {
+        background-color: #333333;
+        position: relative;
+    }
+    .line::before,
+    .line::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #333333;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: -9px;
+    }
+    .line::after {
+        top: 100%;
+        z-index: 1;
+    }
+    .experience {
+        padding: 0;
+    }
+    .experience-left {
+        text-align: right;
+    }
+}
+
+.current {
+    text-align: center;
+    padding: 2rem 2rem 0rem 2rem;
+}

@@ -69,6 +69,24 @@ p {
 .about-photo {
     display: grid;
 }
+/*
+.about-photo img::after {
+    content: "\201C";
+    position: absolute;
+    bottom:0;
+    right: 2rem;
+    color: red;
+    font-size: 4rem;
+}*/
+
+.texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: red;
+}
+
+
 .button-download-cv {
     /*display: grid;*/
     /*background: #c1c1c1 !important;*/
