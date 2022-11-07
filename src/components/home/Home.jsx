@@ -14,8 +14,8 @@ const Home = () => {
                     <div  className="home__img"  style={{ background: `url(${home_profile})` }}></div>
                     <Data />
                 </div>
-                <ScrollDown />
             </div>
+            <ScrollDown />
         </section>
     );
 };

@@ -9,11 +9,17 @@ const Header = () => {
     })
 
     const[Toggle, showMenu] = useState(false)
-    const [acticeNav, setActiveNav] = useState("#home");
+    const [activeNav, setActiveNav] = useState("#home");
     return (
-        <header className="header">
+        <header className="header nav-custom">
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">César</a>
+                <a href="#home" className={"nav__logo",
+                    activeNav === "#home"
+                        ? "nav__link active-link"
+                        : "nav__link"
+                }>
+                    <i className="uil uil-estate uil-apps-custom"></i>
+                </a>
 
                 <div className={Toggle ? "nav__menu show-manu": "nav__menu"}>
                     <ul className="nav__list grid">
@@ -21,7 +27,7 @@ const Header = () => {
                             <a href="#home"
                                onClick={() => setActiveNav('#home')}
                                className={
-                                acticeNav === "#home"
+                                   activeNav === "#home"
                                     ? "nav__link active-link"
                                     : "nav__link"
                                 }
@@ -34,7 +40,7 @@ const Header = () => {
                                 href="#about"
                                 onClick={() => setActiveNav('#about')}
                                 className={
-                                    acticeNav === "#about"
+                                    activeNav === "#about"
                                         ? "nav__link active-link"
                                         : "nav__link"
                             }
@@ -48,7 +54,7 @@ const Header = () => {
                                 href="#experience"
                                 onClick={() => setActiveNav('#experience')}
                                 className={
-                                    acticeNav === "#experience"
+                                    activeNav === "#experience"
                                         ? "nav__link active-link"
                                         : "nav__link"
                                 }
@@ -62,7 +68,7 @@ const Header = () => {
                                 href="#skills"
                                 onClick={() => setActiveNav('#skills')}
                                 className={
-                                    acticeNav === "#skills"
+                                    activeNav === "#skills"
                                         ? "nav__link active-link"
                                         : "nav__link"
                                 }
@@ -75,7 +81,7 @@ const Header = () => {
                                 href="#testimonial"
                                 onClick={() => setActiveNav('#testimonial')}
                                 className={
-                                    acticeNav === "#testimonial"
+                                    activeNav === "#testimonial"
                                         ? "nav__link active-link"
                                         : "nav__link"
                                 }
@@ -89,7 +95,7 @@ const Header = () => {
 
                 <div className="nav__toggle" onClick={() => showMenu((!Toggle))}>
                     <a  className="nav__link">
-                        <i className="uil uil-apps"></i>
+                        <i className="uil uil-apps uil-apps-custom"></i>
                     </a>
                 </div>
             </nav>

@@ -132,3 +132,10 @@
     text-align: center;
     padding: 2rem 2rem 0rem 2rem;
 }
+
+.experience-title{
+    padding-top: 0;
+}
+.current {
+    padding-top: 0;
+}

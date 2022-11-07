@@ -4,7 +4,9 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    /*background-color: var(--body-color);*/
+    box-shadow: 0 5px 5px -7px #111;
+    background-color:#f5f5f5
 }
 
 .nav {
@@ -45,7 +47,10 @@
 .nav__link:hover {
     color: var(--title-color-dark);
 }
-
+.uil-apps-custom {
+    display: none;
+/*    box-shadow: 0 0.4rem 2px -2px gray;*/
+}
 /* == medias queries == */
 @media screen and (max-width: 768px){
     .header{
@@ -105,10 +110,20 @@
     .nav__toggle {
         display: block;
     }
+
+    .nav-custom {
+        /*background-color: rgba(131,131,131,0.5);*/
+        background-color: rgba(245,245,245,0.8);
+    }
+
+    .uil-apps-custom {
+        display: block;
+        color: #838383;
+        font-size: 1.7rem;
+        font-weight: bold !important;
+    }
 }
 
-
-/*change background header*/
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }

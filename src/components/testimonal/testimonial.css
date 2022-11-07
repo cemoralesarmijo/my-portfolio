@@ -9,12 +9,10 @@
 }
 .swiper-slide {
     text-align: center;
-    /*font-size: 16px;*/
     font-size: var(--normal-font-size);
     font-weight: 0;
     background: none;
     transform: translate3d(0,0,0);
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -30,9 +28,6 @@
     align-items: center;
 }
 .swiper-client-msg {
-    /*padding: 2rem 7rem;/*
-    /*background: white;*/
-    /*border-radius: 2rem;*/
     text-align: left;
     box-shadow:var(--herlper-tint);
     position: relative;
@@ -40,14 +35,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
-    /*font-weight: var(--small-font-size);*/
 }
-
-/*
-.swiper-client-msg p {
-    font-weight: var(--tiny-font-size) !important;
-}*/
-
 .swiper-client-msg::before {
     content: "";
     position: absolute;
@@ -58,8 +46,7 @@
     border-color: transparent;
     border-top-color:  var(--herlper-tint);;
 }
-
-/*quote inside testimonal box message*/
+/*quote inside box message*/
 .swiper-client-msg p::before {
     content: "\201C";
     position: absolute;
@@ -75,10 +62,8 @@
     bottom:0;
     right: 2rem;
     color: #ced3ff;
-    /*color: #ced3ff;*/
     font-size: 4rem;
 }
-
 .swiper-client-data {
     align-items: center;
     margin-top: 3.2rem;
@@ -92,18 +77,9 @@
     border: 0.2rem solid rgba(0, 0, 0, 0.1);
 
 }
-
-/*.swiper-slide {*/
-/*    max-width: 10rem;*/
-/*    height: 10rem;*/
-/*    border-radius: 50%;*/
-/*    border: 0.5rem solid var(--herlper-tint);*/
-/*}*/
-
 .swiper-client-data {
     grid-template-columns: repeat(2, 1fr);
 }
-
 .client-data-details,
 .swiper-client-msg {
     color: #8d8d8d;
@@ -112,21 +88,15 @@
     margin-top: 50px;
     /*transform: translate3d(50px, 0px, 0px) !important;*/
 }
-
-
-/* for fix*/
-
 .coworker-name {
     font-size: 17px !important;
     font-weight: bold;
 }
 
-
 @media screen and (max-width: 400px){
     :root {
         --big-font-size: 2.25rem;
     }
-
     .container {
         margin-left: var(--mb-2);
         margin-right: var(--mb-2);
@@ -134,9 +104,8 @@
     .swiper-client-data  {
         align-items: center;
         margin-top: 1rem;
-        gap: 0rem;
+        gap: 0;
     }
-
     .swiper-client-msg::before {
         bottom: -4rem;
         left: 50%;
@@ -145,36 +114,29 @@
         border-color: transparent;
         border-top-color: var(--herlper-tint);
     }
-
     .swiper {
         padding: 2rem !important;
-        /* transform: translate3d(50px, 0px, 0px) !important; */
     }
     .swiper-wrapper {
-        margin-top: 0px;
+        margin-top: 0;
         /* transform: translate3d(50px, 0px, 0px) !important; */
     }
-
     .swiper-client-msg {
         border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 2rem 1.5rem 1.5rem 1.5rem;
     }
-
     .swiper-client-msg p::before {
         left: 0.4rem;
         font-size: 2.5rem;
     }
-
     .swiper-client-msg p::after {
         bottom: -1.5rem;
         right: 0.4rem;
         font-size: 2.5rem;
     }
-
     .swiper {
         padding: 1rem 1.5rem 1.5rem 1rem !important;
     }
-
     .slide-img {
         max-width: 8rem;
         height: 7rem;
