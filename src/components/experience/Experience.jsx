@@ -46,8 +46,8 @@ function Experience() {
                     <div className="empty"></div>
                     <div className="line"></div>
                     <div className="experience">
-                        <div className="experience-date">{process.env.REACT_APP_EXPERIENCE_METS_COMPANY_NAME}</div>
-                        <div className="experience-company">{process.env.REACT_APP_EXPERIENCE_METS_DATE}</div>
+                        <div className="experience-date">{process.env.REACT_APP_EXPERIENCE_METS_DATE}</div>
+                        <div className="experience-company">{process.env.REACT_APP_EXPERIENCE_METS_COMPANY_NAME}</div>
                         <div className="experience-position">{process.env.REACT_APP_EXPERIENCE_METS_ROL}</div>
                         <div className="experience-description">{process.env.REACT_APP_EXPERIENCE_METS_DESCRIPTION}</div>
                     </div>

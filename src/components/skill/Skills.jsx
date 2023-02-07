@@ -38,7 +38,7 @@ const Skills = () => {
                         })
 
                     }
-                    <h2>Cloud & Computers tools</h2>
+                    <h2>DevOps Clouds</h2>
                     {
                         cloudComputerToolsTags.map( data  => {
                             return  <span className="stack">{data}</span>

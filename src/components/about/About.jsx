@@ -3,7 +3,6 @@ import "./about.css"
 
 const About = () => {
     const linkToCv = process.env.REACT_APP_ABOUT_CV_LINK
-    const linkAboutPhoto = process.env.REACT_APP_ABOUT_PROFILE_IMAGE
     const aboutData = JSON.parse(process.env.REACT_APP_ABOUT_DESCRIPTION_TEXT)
     console.log(process.env.REACT__APP__ABOUT__CV_LINK)
     return (
