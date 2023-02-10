@@ -35,12 +35,9 @@ const Footer = () => {
                  </div>
                 <div className="footer__social">
                     <a href={process.env.REACT_APP_LINK_GITHUB_PORFOLIO} className="footer__link footer__how_was_build" target="_blank">
-                        How was build :)
+                        How I was build :)
                     </a>
                 </div>
-                {/*<span className="footer__copy">*/}
-                {/*    cemorales.me*/}
-                {/*</span>*/}
             </div>
         </footer>
     );
