@@ -13,11 +13,6 @@ const About = () => {
                 <span className="text">About me</span>
             </div>
             <div className="container-about grid">
-                {/*<div className="about-photo">*/}
-                {/*    <img src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_1}  className="bottom about__img" alt=""/>*/}
-                {/*    <img src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_2}  className="top about__img" alt=""/>*/}
-                {/*    <img src={process.env.REACT_APP_ABOUT_PROFILE_IMAGE_3}  className="top about__img" alt=""/>*/}
-                {/*</div>*/}
 
                 <div className='about-photo-container'>
 

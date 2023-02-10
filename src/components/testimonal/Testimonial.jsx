@@ -17,7 +17,7 @@ const Testimonial = () => {
         <section className="section" id="testimonial">
             <div className="custom-section-title">
                 <i className='bx bxs-quote-alt-left text'></i>
-                <span className="text">Testimonials</span>
+                <span className="text">LinkedIn Testimonials</span>
             </div>
             <Swiper
                 slidesPerView={2}
@@ -72,6 +72,11 @@ const Testimonial = () => {
                                         alt="client review"/>
                                 </figure>
                                 <div className="client-data-details">
+                                    <p>
+                                        <a href={data.linkedIn} className="home__social-icon" target="_blank" rel="noreferrer">
+                                            <i className="uil uil-linkedin uil-social"></i>
+                                        </a>
+                                    </p>
                                     <p className="coworker-name">{data.name}</p>
                                     <p>{data.title}</p>
                                 </div>
